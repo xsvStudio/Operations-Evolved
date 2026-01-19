@@ -1,280 +1,239 @@
 # Operations Evolved
-**Enterprise Folder Structure & Project Management Framework**
+
+**Production-Ready Company Infrastructure Builder**
+
+*Evolved from [root-architecture](https://github.com/xsvStudio/root-architecture) - Core working system extracted and streamlined.*
 
 ---
 
-## What This Is
+## 🚀 Quick Start
 
-A proven folder structure system + project tracking templates built from 20+ years managing construction, business operations, and professional services projects.
+### Simple Way (GUI)
 
-**Not another project management SaaS.** Not another "productivity hack." This is the actual folder architecture and tracking system that runs real businesses.
-
----
-
-## The Problem We Solve
-
-Most companies store project files like this:
-- `final_final_v3.docx`
-- `New Folder (2)/Documents/Random stuff/`
-- Email attachments nobody can find
-- Google Drive chaos
-- "Where did we put that contract?"
-
-**Cost:** Wasted hours searching. Missed deadlines. Compliance failures. Lost revenue.
-
----
-
-## What You Get (Free Tier)
-
-### 1. **Folder Structure Templates** (6 Industries)
-Pre-built folder hierarchies for:
-- Construction/Contracting
-- General Business
-- Professional Services
-- Restaurants/Hospitality
-- Manufacturing
-- Tech/Software
-
-Each template includes:
-- Standard 5-folder base architecture
-- Industry-specific sub-folders
-- Document checklists
-- Naming conventions
-
-### 2. **Master Tracking Files**
-Excel-based project management tools:
-- `MASTER_ESTIMATE.xlsx` - Project budgeting & cost tracking
-- `RFI_LOG.xlsx` - Request for Information management
-- `PROJECT_TRACKER.xlsx` - Multi-project dashboard
-- `COMPLIANCE_AUDIT.xlsx` - File structure verification
-- `CHECKLIST.md` - Document completion tracking
-
-### 3. **Documentation**
-- Quick start guide
-- Naming standards
-- File delivery protocols
-- Industry best practices
-
----
-
-## Quick Start (3 Steps)
-
-### Step 1: Download
 ```bash
 # Clone the repo
 git clone https://github.com/xsvStudio/Operations-Evolved.git
+cd Operations-Evolved
 
-# Or download ZIP from GitHub
+# Run the launcher
+python LAUNCH.py
 ```
 
-### Step 2: Choose Your Template
-Navigate to `/templates/` and pick your industry:
-- `construction_template.json`
-- `general_business_template.json`
-- `professional_services_template.json`
-- `restaurant_template.json`
-- `manufacturing_template.json`
-- `tech_services_template.json`
+The GUI will open with a modern dark interface. Fill in:
+1. **Organization Name** - Your company name
+2. **Root Directory** - Where to create the structure (Browse button)
+3. **Service Modules** - Toggle which templates to include
 
-### Step 3: Deploy
-Copy the folder structure to your:
-- OneDrive for Business
-- Google Shared Drive
-- Local file server
-- Wherever your team stores project files
-
-**Result:** Instant standardization across your entire organization.
+Click **"INITIALIZE SYSTEMS"** and watch it build in real-time!
 
 ---
 
-## The 5-Folder Architecture
+## 💻 Command Line Usage
 
-Every project follows this base structure:
+```bash
+# Direct backend execution
+python src/init_company_structure.py --root ./MyCompany-root --local
 
-```
-[Project-Name]/
-├── 01-Admin/                 # Contracts, insurance, legal
-├── 02-Financial/             # Estimates, invoices, payments
-├── 03-Planning/              # Schedules, coordination, RFIs
-├── 04-Execution/             # Daily work, submittals, photos
-└── 05-Closeout/              # Final docs, warranties, handoff
+# With specific services only
+python src/init_company_structure.py --root ./Output --local --services WEB,IT,CM
 ```
 
-**Why 5 folders?**
-- Matches project lifecycle stages
-- Intuitive for any team member
-- Scales from 10-file to 10,000-file projects
-- Works for any industry (then customize sub-folders)
+---
+
+## 📚 What Gets Built
+
+```
+YourCompany-root/
+├── HR/                      ← Policies, Forms, Employee Records
+├── ACCOUNTING/              ← Tax Docs, Ledger, Reports, Invoices
+├── MARKETING/               ← Brand Assets, Social Media, Portfolio
+├── OPERATIONS/              ← SOPs, Insurance, Licenses, Equipment
+├── BRANDING/                ← Logos, Colors, Typography
+├── CORPORATE-DOCS/          ← Legal Filings, Contracts, NDAs
+├── 01-INTERNAL-LABS/        ← Your own R&D projects
+├── 02-EXTERNAL-CLIENTS/     ← Client work organized by ID
+├── 03-PROPOSALS-PIPELINE/   ← Active proposals
+├── 04-TEMPLATES/            ← Service-specific templates
+├── 05-COMPLETED/            ← Archived projects by year
+└── 06-ARCHIVE/              ← Historical records
+```
+
+**Total:** 150+ folders/files in ~10 seconds
 
 ---
 
-## What Makes This Different
+## 🎯 Service Templates
 
-| Feature | Operations Evolved | Procore/PlanGrid | Monday/Asana | DIY Google Drive |
-|---------|-------------------|------------------|--------------|------------------|
-| **Cost** | Free (base) | $400-800/mo | $200-500/mo | Free but chaos |
-| **Setup Time** | 15 minutes | 2-4 weeks | 1-2 weeks | Ongoing mess |
-| **Learning Curve** | 1 hour | 2-3 days | 1-2 days | N/A |
-| **Works Offline** | ✅ Yes | ❌ No | ❌ No | ✅ Yes |
-| **Your Data** | ✅ You own it | ⚠️ Their servers | ⚠️ Their servers | ✅ You own it |
-| **Customizable** | ✅ Fully | ❌ Limited | ⚠️ Some | ✅ Too much |
-| **Multi-Service** | ✅ Yes | ❌ Construction only | ✅ Yes | ✅ Yes |
+Each service includes custom workflow folders:
 
----
+### WEB - Website Development
+- Contract-Financials (Invoicing, Contracts)
+- Design-Planning (Branding, Wireframes, Mockups)
+- Execution-Deliverables (GitHub links, Testing, Launch)
+- Client-Communications (Meetings, Email, Reports)
+- Closeout (Training, Handoff)
 
-## Who This Is For
+### IT - Information Technology
+- Migration-Plan, Network-Diagrams
+- Configuration-Scripts, Testing
+- Labor-Tracking, Timesheets
 
-### ✅ Perfect For:
-- **Small businesses** (2-50 employees) managing multiple projects
-- **General contractors** tracking RFIs, submittals, change orders
-- **Service companies** (IT, consulting, agencies) with client work
-- **Restaurants** managing operations, vendors, compliance
-- **Manufacturers** tracking equipment, processes, quality control
-- **Anyone** tired of file chaos and wanting instant structure
+### CM - Construction Management
+- Construction-Drawings, Permits
+- Daily-Reports, RFIs, Submittals
+- Schedule, Progress-Photos
+- Punch-List, As-Builts, Warranties
 
-### ❌ NOT For:
-- Solo freelancers with 1-2 active projects (you don't need this)
-- Enterprises with custom ERP systems (you already have structure)
-- Teams that need real-time collaboration features (use Asana + this)
+### MFG - Manufacturing
+- Process-Flows, CAD-Files, BOM
+- GMP-Compliance-Docs
+- Quality-Control-Reports
 
----
+### TECH - Technology Solutions
+- System-Architecture, API-Specs
+- Source-Code-Link
+- Deployment-Scripts
 
-## Roadmap
+### LEGAL - Legal Services
+- Original-Contract, Redlined-Version
+- Risk-Analysis-Memo
+- Opinion-Letter
 
-### ✅ Phase 1 (Available Now - Jan 2026)
-- 6 industry templates
-- 5 master tracking files
-- Complete documentation
-- Free forever
+### MS - Microsoft Solutions
+- Azure-Configurations
+- Power-Apps-Solutions
+- SharePoint-Sites
 
-### 🚧 Phase 2 (Coming Feb 2026)
-- **Desktop Dashboard** (Electron app)
-- Visual project list
-- RFI tracking interface
-- Alert system (missing docs, overdue items)
-- File structure health monitoring
-
-### 🔮 Phase 3 (Q2 2026)
-- Advanced compliance auditing
-- Custom template builder
-- Team collaboration features
-- Integration with accounting software
+### MULTI - Multi-Service Projects
+- Separate streams (WEB-Stream, IT-Stream, CM-Stream)
+- SHARED coordination folder
+- Unified-Invoicing
 
 ---
 
-## Pricing (Future)
+## 🛠️ Requirements
 
-**Free Tier (Always):**
-- All folder templates
-- All master tracking files
-- Documentation
-- Community support
+- **Python 3.6+**
+- **Tkinter** (for GUI) - usually included with Python
 
-**Pro Tier ($200/mo - Feb 2026):**
-- Desktop dashboard app
-- Project monitoring
-- RFI tracking
-- Alert system
-- Email support
+### Check if you have Tkinter:
+```bash
+python -c "import tkinter; print('Tkinter OK')"
+```
 
-**Enterprise Tier ($500/mo - Q2 2026):**
-- Everything in Pro
-- Custom templates
-- Team management
-- Priority support
-- Training included
+If missing:
+- **Windows:** Reinstall Python with "tcl/tk" option checked
+- **macOS:** `brew install python-tk`
+- **Linux:** `sudo apt install python3-tk`
 
 ---
 
-## Installation Notes
+## 🎮 Features
 
-### For OneDrive/Google Drive:
-1. Download templates
-2. Create your folder structure in cloud drive
-3. It auto-syncs to all employee computers
-4. Everyone has instant access
+### Current Version (v1.0)
+- ✅ Modern GUI with dark theme
+- ✅ Real-time console logging
+- ✅ Progress tracking
+- ✅ 8 service templates
+- ✅ Safety warnings for overwrites
+- ✅ Cross-platform (Windows/Mac/Linux)
+- ✅ Command-line option
 
-### For File Servers:
-1. Deploy to shared network drive
-2. Set folder permissions
-3. Train team on naming standards
-4. Use master Excel files for tracking
-
-### For Local:
-1. Extract to your project folder location
-2. Duplicate structure for each new project
-3. Keep master files in a central tracking folder
-
----
-
-## Documentation
-
-See `/docs/` for detailed guides:
-- [Getting Started](docs/GETTING_STARTED.md)
-- [Template Guide](docs/TEMPLATES.md)
-- [Naming Standards](docs/NAMING_STANDARDS.md)
-- [FAQ](docs/FAQ.md)
+### Roadmap
+- [ ] Drag-and-drop service customization
+- [ ] Export/import configurations
+- [ ] Git repo auto-initialization
+- [ ] Google Drive integration
+- [ ] Custom branding system
 
 ---
 
-## Support
+## 📸 Screenshots
 
-- **Issues:** [GitHub Issues](https://github.com/xsvStudio/Operations-Evolved/issues)
-- **Questions:** Discussions tab
-- **Email:** support@xsvstudio.com
-- **Website:** [www.xsvstudio.com](https://www.xsvstudio.com)
+*Coming soon - GUI in action*
 
 ---
 
-## Contributing
+## 👥 Development
 
-This is a commercial product with an open-source free tier. Contributions welcome:
-- Template improvements
-- Industry-specific variations
-- Documentation enhancements
-- Bug reports
+This is the **production core** extracted from the experimental [root-architecture](https://github.com/xsvStudio/root-architecture) repo.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+**Original Development:**
+- Complex multi-branch evolution
+- Testing of various UI approaches
+- Feature prototyping
 
----
-
-## License
-
-**Free Tier:** MIT License (use freely, modify, distribute)
-**Pro/Enterprise Tiers:** Commercial license required
-
-See [LICENSE.md](LICENSE.md) for details.
+**Operations-Evolved:**
+- Clean, tested, working code only
+- No experimental branches
+- Ready for real-world deployment
 
 ---
 
-## About xsvStudio
+## 📝 File Structure
 
-Built by Ian Martin and the team at [xsvStudio](https://www.xsvstudio.com) - a web development and business operations firm based in New Castle, DE.
-
-**Why we built this:**
-We got tired of watching companies waste hours searching for files, miss deadlines because documents were lost, and fail audits because their folder structure was chaos. So we systemized our own operations, realized it worked for our clients, and turned it into a product.
-
----
-
-## The Origin Story
-
-Started as an internal project to organize xsvStudio's own operations (web dev + construction services). We needed one system that could handle:
-- Web design projects
-- Construction contract management
-- Client deliverables
-- Financial tracking
-- Compliance documentation
-
-After 6 months of refinement, we realized: **This works for any project-based business.**
-
-So we're open-sourcing the foundation and building a commercial dashboard on top.
+```
+Operations-Evolved/
+├── LAUNCH.py                  ← Double-click launcher
+├── src/
+│   ├── gui_installer.py       ← Tkinter GUI (main interface)
+│   ├── init_company_structure.py  ← Backend builder
+│   └── __init__.py
+├── docs/
+│   ├── ARCHITECTURE.md        ← System design
+│   └── EXAMPLES.md            ← Usage examples
+├── .gitignore
+└── README.md
+```
 
 ---
 
-**Download it. Try it. Tell us what breaks.**
+## ❓ FAQ
 
-We're shipping fast and fixing faster.
+**Q: Can I customize the templates?**
+A: Yes! After building, all folders are standard file system directories. Edit as needed.
 
-Ian Martin  
-CTO, xsvStudio  
-January 2026
+**Q: What if I already have a company folder?**
+A: The system will warn you before overwriting. It skips existing folders and logs them.
+
+**Q: Does this work on Windows/Mac/Linux?**
+A: Yes! Python and Tkinter are cross-platform.
+
+**Q: Can I run this multiple times?**
+A: Yes. Existing folders won't be deleted, only new ones added.
+
+---
+
+## 🐛 Issues & Support
+
+- **Bug Reports:** [Create an issue](https://github.com/xsvStudio/Operations-Evolved/issues)
+- **Feature Requests:** [Discussions](https://github.com/xsvStudio/Operations-Evolved/discussions)
+- **Original Development:** [root-architecture](https://github.com/xsvStudio/root-architecture)
+
+---
+
+## 📦 Related Projects
+
+- **[root-architecture](https://github.com/xsvStudio/root-architecture)** - Original development repo with experimental features
+- **[electron-launcher-alpha](https://github.com/xsvStudio/electron-launcher-alpha)** - Electron GUI experiments
+
+---
+
+## 📜 License
+
+**Personal/Internal Use:** Free
+
+For commercial deployment or redistribution, contact: `support@xsvstudio.com`
+
+---
+
+## ✅ Status
+
+**Current Version:** v1.0.0  
+**Status:** ✅ Production Ready  
+**Last Updated:** January 19, 2026
+
+---
+
+**Built by xsvStudio Technology Division**  
+*Operations Evolved - Business Infrastructure, Simplified.*
