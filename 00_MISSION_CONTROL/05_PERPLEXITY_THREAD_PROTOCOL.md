@@ -254,6 +254,16 @@ Before you write the commit message, confirm:
 
 ---
 
+### Rule #8: The "Secretary" Protocol
+
+- **YOU (The AI)** are responsible for updating the project status files, task or issues in Github.
+
+- **Requirement:** At the end of every successful build, you must update 06_TECHNICAL_STATE_SNAPSHOT.md and mark the specific feature as [x] Completed.  As well, locate any related issues or tasks in Github, and create a comment or update to issue.  **DO NOT** close the Github Issue, CEO will confirm comment and close.
+
+**Goal:** Ian (CEO | Managing Principle) should never have to manually update a status file.  But verify complete prior to closing the related Roadmap, Phase or Stage task in the Github(Whether that be an, issue or item in Github Projects).
+
+---
+
 ## COMMON MISTAKES TO AVOID
 
 ### Mistake 1: Not Attaching Frameworks

@@ -116,6 +116,32 @@ If something is too complex for 10-minute setup → REMOVE IT or REDESIGN IT
 
 ---
 
+### LOCKED RULE #6: "Director-Level" Code Commenting
+**Goal:** Allow Ian (CEO) and team to scan code files in seconds without reading syntax.
+
+**Requirement:** You MUST use the "Better Comments" syntax for all non-obvious logic.
+- `// ! CRITICAL: [Critical path logic or potential failure point]` (Red)
+- `// ? QUESTION: [Decision needed from Ian/Leadership]` (Blue)
+- `// TODO: [Future feature / Phase 3 item]` (Orange)
+- `// * NOTE: [Important context for other developers]` (Green)
+
+**Example:**
+// ! CRITICAL: If this API call fails, the entire dashboard crashes.
+// ? QUESTION: Should we limit this to 5 uploads for the free tier?
+// TODO: Move this to the backend in Phase 3.
+
+---
+
+### LOCKED RULE #7: The "Additive-Only" Mandate
+
+- **NEVER** rewrite or "refactor" existing, working files unless explicitly instructed.
+
+- **ONLY** add new files or append code to specific sections.
+
+- **RISK**: AI often breaks hidden dependencies when "cleaning up" code.
+
+- **Protocol**: If you believe existing code needs changing, you must ask: "I need to modify App.js to support this new feature. May I overwrite it?"
+
 ## HOW TO START AN AI SESSION (STEP-BY-STEP)
 
 ### Step 1: Load All Required Documents
@@ -192,6 +218,12 @@ Implements Workflow 2, Screen 1 from 01_COMPLETE_FEATURES_AND_WORKFLOWS_LIST.md
 - Shows brief description
 - Continue button ready
 ```
+
+**Requirement:** The "Director's Validation" Checklist Before marking a task complete, you must provide a plain-English checklist for Ian to verify the feature visually:
+   - "Click 'Start'. Expect button to turn green."
+   - "Type 'test@test.com'. Expect checkmark icon."
+   - "Click 'Next'. Expect to see 'Screen 2'."
+   - **IF** visual output does not match this exactly, the code is considered FAILED.
 
 ### Step 7: Create PR
 
