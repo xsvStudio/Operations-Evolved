@@ -1,5 +1,5 @@
 # Operations Evolved
-
+*This will be expanded on in the future. -Ian 1/19/26
 **Production-Ready Company Infrastructure Builder**
 
 *Evolved from [root-architecture](https://github.com/xsvStudio/root-architecture) - Core working system extracted and streamlined.*
@@ -7,7 +7,7 @@
 ---
 
 ## 🚀 Quick Start
-
+*This will be expanded on in the future. -Ian 1/19/26
 ### Simple Way (GUI)
 
 
@@ -35,8 +35,8 @@ Click **"INITIALIZE SYSTEMS"** and watch it build in real-time!
 ---
 
 ## 💻 Command Line Usage
-
-###To be added when built 
+*This will be expanded on in the future. -Ian 1/19/26
+### To be added when built 
 ---
 
 ## 📚 What Gets Built
@@ -62,7 +62,7 @@ YourCompany-root/
 ---
 
 ## 🎯 Service Templates
-
+*This will be expanded on in the future. -Ian 1/19/26
 Each service includes custom workflow folders:
 
 ### WEB - Website Development
@@ -118,6 +118,7 @@ Each service includes custom workflow folders:
 ---
 
 ## 🎮 Features
+*This will be expanded on in the future. -Ian 1/19/26
 
 ### Current Version (v1.0)
 - ✅ Modern Dashboard with dark theme and light theme
@@ -131,7 +132,7 @@ Each service includes custom workflow folders:
 
 ### Roadmap
 - [ ] Drag-and-drop service customization
-- [ ] Drag-and-drop arranging of File and Folder naming rules before install.
+- [ ] Drag-and-drop arranging of File and Folder naming rules before install. Standardize and name the entire folder structure however you want.   Main Structure, project folders, estimating or proposal tracking folders and files.  Keep it simple or code it to fit every code sequence you like.
 - [ ] Export/import configurations
 - [ ] Git repo auto-initialization
 - [ ] Google Drive integration
@@ -140,6 +141,7 @@ Each service includes custom workflow folders:
 ---
 
 ## 📸 Screenshots
+*This will be expanded on in the future. -Ian 1/19/26
 
 *Coming soon - Dashboard in action*
 *In Development - All-in-One Construction Management Software, SaaS, CRE & ERP alternative for in house ownership of data and control. Follow the main product line and it's updates, features and upgrades, and/or customize your installation to fit your companies needs.*
@@ -147,6 +149,8 @@ Each service includes custom workflow folders:
 ---
 
 ## 👥 Development
+
+*This will be expanded on in the future. -Ian 1/19/26
 
 This is the **production core** extracted from the experimental [root-architecture](https://github.com/xsvStudio/root-architecture) repo.
 
@@ -163,14 +167,14 @@ This is the **production core** extracted from the experimental [root-architectu
 ---
 
 ## 📝 File Structure
-
+Coming soon after built. *This will be expanded on in the future. -Ian 1/19/26
 ```
 Operations-Evolved/
-├── LAUNCH.py                  ← Double-click launcher
+├── Operations Evolved.                  ← Double-click launcher
 ├── src/
-│   ├── gui_installer.py       ← Tkinter GUI (main interface)
-│   ├── init_company_structure.py  ← Backend builder
-│   └── __init__.py
+│   ├──       
+│   ├──   ← Backend builder
+│   └── 
 ├── docs/
 │   ├── ARCHITECTURE.md        ← System design
 │   └── EXAMPLES.md            ← Usage examples
@@ -181,7 +185,7 @@ Operations-Evolved/
 ---
 
 ## ❓ FAQ
-
+*This will be expanded on in the future. -Ian 1/19/26
 **Q: Can I customize the templates?**
 A: Yes! After building, all folders are standard file system directories. Edit as needed.
 
@@ -192,7 +196,7 @@ A: The system will warn you before overwriting. It skips existing folders and lo
 A: Yes! Python and Tkinter are cross-platform.
 
 **Q: Can I run this multiple times?**
-A: Yes. Existing folders won't be deleted, only new ones added.
+A: Yes. Existing folders won't be deleted, only new ones added. If you want to remove folders you will be warned that data may be lost and unrecoverable if not migrated correctly.
 
 ---
 
