@@ -10,16 +10,22 @@
 
 ### Simple Way (GUI)
 
+
+#### Download Launcher here.
+Section to be added.
+
+
+#### Run the Code
 ```bash
 # Clone the repo
 git clone https://github.com/xsvStudio/Operations-Evolved.git
 cd Operations-Evolved
 
-# Run the launcher
-python LAUNCH.py
-```
+# Run the launcher.  Needs to be filled in.
 
-The GUI will open with a modern dark interface. Fill in:
+``` 
+
+a modern dark interface. Fill in:
 1. **Organization Name** - Your company name
 2. **Root Directory** - Where to create the structure (Browse button)
 3. **Service Modules** - Toggle which templates to include
@@ -30,14 +36,7 @@ Click **"INITIALIZE SYSTEMS"** and watch it build in real-time!
 
 ## 💻 Command Line Usage
 
-```bash
-# Direct backend execution
-python src/init_company_structure.py --root ./MyCompany-root --local
-
-# With specific services only
-python src/init_company_structure.py --root ./Output --local --services WEB,IT,CM
-```
-
+###To be added when built 
 ---
 
 ## 📚 What Gets Built
@@ -113,34 +112,26 @@ Each service includes custom workflow folders:
 
 ## 🛠️ Requirements
 
-- **Python 3.6+**
-- **Tkinter** (for GUI) - usually included with Python
+### Section to be added when completed.
 
-### Check if you have Tkinter:
-```bash
-python -c "import tkinter; print('Tkinter OK')"
-```
-
-If missing:
-- **Windows:** Reinstall Python with "tcl/tk" option checked
-- **macOS:** `brew install python-tk`
-- **Linux:** `sudo apt install python3-tk`
 
 ---
 
 ## 🎮 Features
 
 ### Current Version (v1.0)
-- ✅ Modern GUI with dark theme
-- ✅ Real-time console logging
+- ✅ Modern Dashboard with dark theme and light theme
+- ✅ Real-time console logging during installations or product adds, etc.  
 - ✅ Progress tracking
 - ✅ 8 service templates
 - ✅ Safety warnings for overwrites
 - ✅ Cross-platform (Windows/Mac/Linux)
+- ✅ Download.exe file if you don't computer.
 - ✅ Command-line option
 
 ### Roadmap
 - [ ] Drag-and-drop service customization
+- [ ] Drag-and-drop arranging of File and Folder naming rules before install.
 - [ ] Export/import configurations
 - [ ] Git repo auto-initialization
 - [ ] Google Drive integration
@@ -150,7 +141,8 @@ If missing:
 
 ## 📸 Screenshots
 
-*Coming soon - GUI in action*
+*Coming soon - Dashboard in action*
+*In Development - All-in-One Construction Management Software, SaaS, CRE & ERP alternative for in house ownership of data and control. Follow the main product line and it's updates, features and upgrades, and/or customize your installation to fit your companies needs.*
 
 ---
 
